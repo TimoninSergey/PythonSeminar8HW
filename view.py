@@ -23,4 +23,4 @@ def mark_check():
     print('Оценка должна быть от 1 до 5, для продолжения перезапустите программу.')
 
 def mark_deleting():
-    return input('Сохранить оценку? ').lower()
+    return input('Сохранить оценку? да/нет').lower()
