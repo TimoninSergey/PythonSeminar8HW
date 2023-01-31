@@ -40,3 +40,8 @@ def student_mark(student: str, mark: int):
 
 def get_journal():
     return journal
+
+def delete_mark(student: str):
+    marks = list(journal.get(student))
+    marks.pop(len(marks)-1)
+    journal[student] = marks

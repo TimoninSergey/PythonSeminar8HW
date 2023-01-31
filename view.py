@@ -15,3 +15,12 @@ def what_mark():
 def list_of_child(journal: dict):
     for i, child in enumerate(journal, 1):
         print(f'{i}. {child:20} {journal.get(child)}')
+
+def student_check():
+    print('Такого ученика нет, для продолжения перезапустите программу.')
+
+def mark_check():
+    print('Оценка должна быть от 1 до 5, для продолжения перезапустите программу.')
+
+def mark_deleting():
+    return input('Сохранить оценку? ').lower()
